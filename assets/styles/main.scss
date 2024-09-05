@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+@import 'login/login';
+@import 'layout/layout';
+@import 'layout/location';
+@import 'controller/controller';
+
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}

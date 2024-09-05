@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة ربط تبادل المعلومات</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout-container">
+        <!-- Header -->
+        <header class="layout-header">
+            <ul class="navbar-nav  layout-nav-profile">
+                <li class="nav-item">
+                    <a class="nav-link layout-profile-link" href="profile.html">محمود ربيع محمد أحمد</a>
+                </li>
+                <!-- if i have notification add thiss class -->
+                <li class="nav-item notification">
+                    <span class="layout-span-red"></span>
+                    <a class="nav-link icon-header"> <i class="fa-solid fa-bell"></i></a>
+                    <div class="notification-dropdown">
+                        <ul>
+                            <li>هناك العديد من الأنواع المتوفرة لنصوص</li>
+                            <li>هناك العديد من الأنواع المتوفرة لنصوص</li>
+                            <li>هناك العديد من الأنواع المتوفرة لنصوص</li>
+                            <li>هناك العديد من الأنواع المتوفرة لنصوص</li>
+                            <li>هناك العديد من الأنواع المتوفرة لنصوص</li>
+                            <li>هناك العديد من الأنواع المتوفرة لنصوص</li>
+                        </ul>
+                        <div class="more-notifications">
+                            <a href="../layout/index.html"> المزيد +99</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link icon-header logout"> <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+                </li>
+            </ul>
+        </header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light layout-navbar">
+            <div class="container-fluid main-container">
+                <div class="navbar-brand layout-logo">
+                    <img src="../assets/images/logo.png " alt="Logo" class="logo-image z-3">
+                </div>
+                <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse layout-nav-collapes" id="navbarNav">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 layout-nav-items">
+                        <li class="nav-item layout-main-link">
+                            <a class="nav-link layout-nav-link active" aria-current="page"
+                                href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item layout-main-link">
+                            <a id="dynamic-link" class="nav-link layout-nav-link" href="location.html">ارسال معلومة مكانية</a>
+                        </li>                                                                       
+                        <li class="nav-item  layout-main-link">
+                            <a class="nav-link layout-nav-link" href="location.html">استقبال معلومه مكانيه</a>
+                        </li>
+                        <li class="nav-item  layout-main-link">
+                            <a class="nav-link layout-nav-link" href="reports.html">التقارير</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                 
+                    <!-- Modal is here -->
+                    <div id="modal"></div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Section -->
+        <div id="content" class="layout-content ">
+            <div class="container layout-spcial">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm layout-card">
+                            <div class="layout-card-header">
+                                <img src="../assets/images/img-2.png" class=" layout-card-icon" alt="Icon">
+
+                                <h5 class="card-title layout-card-title">الصادر</h5>
+                                <span class="layout-badge">55</span>
+                            </div>
+                            <div class="card-body d-flex align-items-center layout-card-body">
+                                <div class="layout-card-text-container">
+                                    <p class="card-text layout-card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى
+                                        المقروء لصفحة ما في الصفحة التي يقرأه هناك حقيقة مثبتة منذ زمن طويل وهي أن
+                                        المحتوى المقروء لصفحة ما في الصفحة التي يقرأه
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow-sm layout-card">
+                            <div class="layout-card-header">
+                                <img src="../assets/images/img-1.png" class=" layout-card-icon" alt="Icon">
+                                <h5 class="card-title layout-card-title">الوارد</h5>
+                                <span class="layout-badge">55</span>
+                            </div>
+                            <div class="card-body d-flex align-items-center layout-card-body">
+                                <div class="layout-card-text-container">
+                                    <p class="card-text layout-card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى
+                                        المقروء لصفحة ما في الصفحة التي يقرأه هناك حقيقة مثبتة منذ زمن طويل وهي أن
+                                        المحتوى المقروء لصفحة ما في الصفحة التي يقرأه
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">احد مشاريع </p>
+            <img src="../assets/images/alqemam.png" class="img-footer-logo" />
+            <p class="footer-text">
+                &copy; 2019
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/location.js"></script>
+    <script src="../js/controller.js"></script>
+</body>
+
+</html>

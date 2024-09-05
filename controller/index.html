@@ -1,0 +1,302 @@
+<div id="modal">
+    <div class="layout-btn" data-bs-toggle="modal" data-bs-target="#attachmentModal" id="openModal">
+        <img src="../assets/images/Screenshot 2024-09-01 103936.png" alt="Exchange Attachments">
+        <h6 class="layout-btn-heading">تبادل مرفقات</h6>
+    </div>
+    <div class="modal fade" id="attachmentModal" tabindex="-1" aria-labelledby="attachmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="attachmentModalLabel">تبادل مرفقات</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h6 class="btn btn-outline-secondary btn-gray  active" id="messageDataTab">
+                            بيانات المراسلة
+                        </h6>
+                        <h6 class="btn btn-outline-secondary btn-gray " id="attachmentsTab">
+                            مرفقات المراسلة
+                        </h6>
+                    </div>
+                    <div class=" mt-3 modal-layout-main">
+                        <div id="messageDataContent">
+                            <!-- Content for بيانات المراسلة -->
+                            <div class="input-layout-nameclient">
+                                <label for="recipientName" class="form-label">اسم العميل المستقل للطلب</label>
+                                <input type="text" class="form-control" id="recipientName">
+                                <div class="layout-icon-plus">
+                                    <div class="plus-icon">
+                                        <i class="fa-solid fa-plus layout-icon-modal"></i>
+                                    </div>
+                                    <span class="span-hover">اضافة أكثر من مستقبل</span>
+                                </div>
+                            </div>
+                            <div class="layout-modal-optional">
+                                <div class="mb-3 mt-3">
+                                    <label for="subject" class="form-label">الموضوع</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="description" class="form-label">الشرح</label>
+                                    <textarea class="form-control" id="description" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="layout-modal-additional-recipient form-control">
+                                <!-- Dynamic rows of checkboxes here -->
+                                <div class="row layout-modal-employee">
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe1">
+                                            <label class="form-check-label" for="rememberMe1">اسم الموظف رقم
+                                                واحد</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe2">
+                                            <label class="form-check-label" for="rememberMe2">اسم الموظف رقم
+                                                اثنين</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe3">
+                                            <label class="form-check-label" for="rememberMe3">اسم الموظف رقم
+                                                ثلاثة</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row layout-modal-employee">
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe1">
+                                            <label class="form-check-label" for="rememberMe1">اسم الموظف رقم
+                                                واحد</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe2">
+                                            <label class="form-check-label" for="rememberMe2">اسم الموظف رقم
+                                                اثنين</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe3">
+                                            <label class="form-check-label" for="rememberMe3">اسم الموظف رقم
+                                                ثلاثة</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row layout-modal-employee">
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe1">
+                                            <label class="form-check-label" for="rememberMe1">اسم الموظف رقم
+                                                واحد</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe2">
+                                            <label class="form-check-label" for="rememberMe2">اسم الموظف رقم
+                                                اثنين</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe3">
+                                            <label class="form-check-label" for="rememberMe3">اسم الموظف رقم
+                                                ثلاثة</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row layout-modal-employee">
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe1">
+                                            <label class="form-check-label" for="rememberMe1">اسم الموظف رقم
+                                                واحد</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe2">
+                                            <label class="form-check-label" for="rememberMe2">اسم الموظف رقم
+                                                اثنين</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 form-check">
+                                        <div class="form-check form-check-login">
+                                            <input type="checkbox" class="form-check-input form-check-input-login"
+                                                id="rememberMe3">
+                                            <label class="form-check-label" for="rememberMe3">اسم الموظف رقم
+                                                ثلاثة</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="attachmentsContent">
+                            <div class="container">
+                                <div class="row attachmentsContent-main">
+                                    <!-- Column for attachment items -->
+                                    <div class="col-8 attachment-input-group">
+                                        <div class="mb-3 mt-3">
+                                            <label for="subject" class="form-label">نوع المرفق</label>
+                                            <input type="text" class="form-control" id="subject">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="description" class="form-label">الشرح</label>
+                                            <textarea class="form-control" id="description" rows="3"></textarea>
+                                        </div>
+                                        <div class="mb-3 form-control attachment-div">
+                                            <h6 class="attachment-heading">اسحب المرفقات هنا</h6>
+                                            <span class="attachment-icon"><i class="fa-solid fa-plus"></i></span>
+                                        </div>
+
+                                        <div class="attachment-link-heading">
+                                            <hr />
+                                            <h6 class="attachment-heading">اضف الرابط</h6>
+                                            <hr />
+                                        </div>
+
+                                        <div class="mb-3 mt-3">
+                                            <label for="subject" class="form-label">عنوان الرابط</label>
+                                            <input type="text" class="form-control" id="subject">
+                                        </div>
+
+                                        <div class="input-layout-nameclient">
+                                            <label for="recipientNamelink" class="form-label">الرابط</label>
+                                            <input type="text" class="form-control" id="recipientNamelink">
+                                            <div class="layout-icon-plus">
+                                                <div class="plus-icon" id="addlink">
+                                                    <i class="fa-solid fa-plus layout-icon-modal"></i>
+                                                </div>
+                                                <span class="span-hover">اضافة رابط اخر</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Column for link section -->
+                                    <div class="col-4 attachment-modal-group">
+                                        <div class="progress-part">
+                                            <div class="prigress-main mt-3">
+                                                <div class="progress-header">
+                                                    <p class="form-label progress-header-label">اسم المرفق</p>
+                                                    <i class="fa-solid fa-x progress-icon"></i>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="prigress-main mt-3">
+                                                <div class="progress-header">
+                                                    <p class="form-label progress-header-label">اسم المرفق</p>
+                                                    <i class="fa-solid fa-x progress-icon"></i>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="prigress-main mt-3">
+                                                <div class="progress-header">
+                                                    <p class="form-label progress-header-label">اسم المرفق</p>
+                                                    <i class="fa-solid fa-x progress-icon"></i>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="prigress-main mt-3">
+                                                <div class="progress-header">
+                                                    <p class="form-label progress-header-label">اسم المرفق</p>
+                                                    <i class="fa-solid fa-x progress-icon"></i>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="prigress-main mt-3">
+                                                <div class="progress-header">
+                                                    <p class="form-label progress-header-label">اسم المرفق</p>
+                                                    <i class="fa-solid fa-x progress-icon"></i>
+                                                </div>
+                                                <div class="progress mt-2">
+                                                    <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="link-part" id="linkList">
+                                            <!-- Edit Link Modal -->
+                                            <div class="modal fade" id="editModal" tabindex="-1"
+                                                aria-labelledby="editModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="editModalLabel">تعديل الرابط</h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <input type="text" id="editLinkInput" class="form-control"
+                                                                placeholder="Enter new link">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal" id="close-modal">غلق</button>
+                                                            <button type="button" id="saveEditButton"
+                                                                class="btn btn-primary" >حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-end">
+                                        <button class="custom-btn">
+
+                                            <span class="text-butn">
+                                                <a href="./login/email.html">ارسال</a>
+                                            </span>
+                                            <span class="arrow-icon">
+                                                <i class="fa-solid fa-arrow-left"></i>
+                                            </span>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
