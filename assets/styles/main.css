@@ -48,9 +48,9 @@
   position: relative;
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .login-input {
-  border-radius: 30px;
-  padding: 13px 8px;
-  border: 2px solid #f3f3f3;
+  border-radius: 30px !important;
+  padding: 11px 8px;
+  border: 1px solid #f3f3f3;
   padding-inline-start: 20px;
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .login-input:active, .login-page .login-form-container .login-main-part .login-form .position-relative .login-input:focus {
@@ -62,12 +62,12 @@
   padding: 8px 14px;
   border-radius: 100%;
   position: absolute;
-  top: 7px;
-  left: 10px;
+  top: 5px;
+  left: 7px;
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .icon-background .icon-login {
   color: #cacaca;
-  font-size: 15px;
+  font-size: 16px;
 }
 .login-page .login-form-container .login-main-part .login-form .login-remember {
   margin-block: 20px;
@@ -100,12 +100,12 @@
 .login-page .login-form-container .login-main-part .login-form .login-remember .forgot-password {
   text-decoration: none;
   color: #33aeaa;
-  font-weight: 500;
+  font-weight: 600;
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login .custom-btn {
   margin-block-start: 20px;
@@ -126,7 +126,7 @@
   margin-inline-end: 10px;
   position: absolute;
   left: 10px;
-  top: 7px;
+  top: 5px;
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login .custom-btn .text-butn {
   font-size: 20px;
@@ -148,6 +148,7 @@
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login .enter-btn {
   width: 30% !important;
+  margin-inline-start: 10px;
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login .enter-btn .arrow-icon {
   font-size: 18px;
@@ -204,6 +205,7 @@
   .login-page .login-form-container .login-main-part .login-form .btns-login .activte-button,
   .login-page .login-form-container .login-main-part .login-form .btns-login .enter-btn {
     width: 100% !important;
+    margin-inline-start: 0px;
   }
   .login-page .login-form-container .login-main-part .login-form .btns-login .custom-btn .arrow-icon {
     font-size: 19px;
@@ -413,8 +415,7 @@
   font-weight: bold;
 }
 .layout-container .layout-content {
-  background-image: url("../images/bg.webp");
-  height: calc(100vh - 213px);
+  height: calc(100vh - 170px);
 }
 .layout-container .layout-content .layout-spcial {
   display: flex;
@@ -423,12 +424,13 @@
   height: 100%;
 }
 .layout-container .layout-content .layout-spcial .layout-card {
+  padding: 0px 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border: none;
-  box-shadow: 0 -1px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 18px rgba(0, 0, 0, 0.1) !important;
 }
 .layout-container .layout-content .layout-spcial .layout-card .layout-card-header {
   padding: 8px 0px;
@@ -443,16 +445,17 @@
 }
 .layout-container .layout-content .layout-spcial .layout-card .layout-card-header .layout-card-icon {
   position: absolute;
-  top: -33px;
-  right: -13px;
+  top: -32px;
+  right: -14px;
+  width: 85px;
 }
 .layout-container .layout-content .layout-spcial .layout-card .layout-card-header .layout-badge {
   position: absolute;
-  top: 8px;
+  top: 6.5px;
   left: 10px;
   background-color: #5a8462;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 18px;
   padding: 4px 8px;
   border-radius: 100%;
 }
@@ -464,16 +467,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-block-end: 10px;
 }
 .layout-container .layout-content .layout-spcial .layout-card .layout-card-text-container .layout-card-text {
   width: 80%;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .footer {
   width: 100% !important;
-  margin-block: 20px;
 }
 
 @media (max-width: 1230px) {
@@ -513,6 +516,7 @@
   }
   .layout-container .layout-content {
     height: auto;
+    padding: 20px 0px;
   }
 }
 .dashboard-container {
@@ -1252,9 +1256,10 @@
 .layout-modal-additional-recipient {
   display: none;
   margin-top: 0px !important;
+  padding-inline-start: 21px;
 }
-.layout-modal-additional-recipient .layout-modal-employee {
-  margin-block: 10px;
+.layout-modal-additional-recipient .form-check {
+  margin-block-end: 15px;
 }
 
 .form-check {
@@ -1289,6 +1294,11 @@
   margin-block-start: 3px;
 }
 
+@media (max-width: 990px) {
+  .form-check {
+    width: 49.333333%;
+  }
+}
 @media (max-width: 700px) {
   #attachmentsContent .text-end .custom-btn {
     width: 100%;
@@ -1298,13 +1308,20 @@
   #attachmentsContent .attachmentsContent-main {
     flex-direction: column;
   }
-  #attachmentsContent .attachmentsContent-main .attachment-modal-group, #attachmentsContent .attachmentsContent-main .attachment-input-group {
+  #attachmentsContent .attachmentsContent-main .attachment-modal-group,
+  #attachmentsContent .attachmentsContent-main .attachment-input-group {
     width: 100% !important;
   }
   #attachmentsContent .attachmentsContent-main .attachment-input-group {
     border: none;
   }
+  .form-check {
+    width: 100%;
+  }
 }
 body {
   font-family: "Tajawal", sans-serif;
+  background-image: url("../images/bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

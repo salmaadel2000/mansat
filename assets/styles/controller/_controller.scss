@@ -100,14 +100,15 @@
                 margin: 0px;
                 font-weight: 500;
                 font-size: 14px;
-            
+
             }
 
             .link-icon {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                 margin-block-start: 5px;
+                margin-block-start: 5px;
+
                 .icon-container {
                     color: $icon-color;
                     font-size: 12px;
@@ -115,12 +116,13 @@
                     cursor: pointer;
 
                     i:first-of-type {
-                        margin-inline-end:11px;
+                        margin-inline-end: 11px;
                     }
-                    i:last-of-type{
-                      &:hover{
-                        color: red;
-                      }
+
+                    i:last-of-type {
+                        &:hover {
+                            color: red;
+                        }
                     }
                 }
 
@@ -306,9 +308,10 @@
 .layout-modal-additional-recipient {
     display: none;
     margin-top: 0px !important;
+    padding-inline-start: 21px;
 
-    .layout-modal-employee {
-        margin-block: 10px;
+    .form-check {
+        margin-block-end: 15px;
     }
 }
 
@@ -349,6 +352,12 @@
     }
 }
 
+@media(max-width:990px) {
+    .form-check {
+        width: 49.333333%;
+    }
+}
+
 @media (max-width:700px) {
     #attachmentsContent {
         .text-end {
@@ -358,17 +367,25 @@
         }
     }
 }
+
 @media (max-width:500px) {
     #attachmentsContent {
-       
-        .attachmentsContent-main{
+
+        .attachmentsContent-main {
             flex-direction: column;
-            .attachment-modal-group ,.attachment-input-group{
+
+            .attachment-modal-group,
+            .attachment-input-group {
                 width: 100% !important;
             }
-            .attachment-input-group{
+
+            .attachment-input-group {
                 border: none;
             }
         }
+    }
+
+    .form-check {
+        width: 100%;
     }
 }

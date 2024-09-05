@@ -142,7 +142,7 @@
         }
 
         .layout-nav-items {
-           margin: auto;
+            margin: auto;
             gap: 20px;
             padding-inline-start: 0px;
 
@@ -153,6 +153,7 @@
                     position: relative;
                     z-index: 3;
                     width: fit-content;
+
                     &.active::before {
                         position: absolute;
                         content: "";
@@ -233,8 +234,8 @@
     }
 
     .layout-content {
-        background-image: url('../images/bg.webp');
-        height: calc(100vh - 213px);
+
+        height: calc(100vh - 170px);
 
         .layout-spcial {
             display: flex;
@@ -243,12 +244,13 @@
             height: 100%;
 
             .layout-card {
+                padding: 0px 3px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
                 border: none;
-                box-shadow: 0 -1px 18px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 -1px 18px rgba(0, 0, 0, 0.1) !important;
 
                 .layout-card-header {
                     padding: 8px 0px;
@@ -263,17 +265,18 @@
 
                     .layout-card-icon {
                         position: absolute;
-                        top: -33px;
-                        right: -13px;
+                        top: -32px;
+                        right: -14px;
+                        width: 85px;
                     }
 
                     .layout-badge {
                         position: absolute;
-                        top: 8px;
+                        top: 6.5px;
                         left: 10px;
-                        background-color: $span-background;
-                        font-weight: 600;
-                        font-size: 15px;
+                        background-color: #5a8462;
+                        font-weight: 500;
+                        font-size: 18px;
                         padding: 4px 8px;
                         border-radius: 100%;
                     }
@@ -288,11 +291,12 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    padding-block-end: 10px;
 
                     .layout-card-text {
                         width: 80%;
                         text-align: center;
-                        font-weight: 300;
+                        font-weight: 500;
                     }
                 }
             }
@@ -303,7 +307,6 @@
 
 .footer {
     width: 100% !important;
-    margin-block:20px;
 }
 
 
@@ -317,7 +320,7 @@
         }
 
         .layout-content {
-          
+
 
             .layout-spcial {
                 margin-block-start: 20px;
@@ -363,8 +366,10 @@
                 width: 100%;
             }
         }
-        .layout-content{
+
+        .layout-content {
             height: auto;
+            padding: 20px 0px;
         }
     }
 }

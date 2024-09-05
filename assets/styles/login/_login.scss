@@ -52,9 +52,9 @@
                     position: relative;
 
                     .login-input {
-                        border-radius: 30px;
-                        padding: 13px 8px;
-                        border: 2px solid $border-input;
+                        border-radius: 30px !important;
+                        padding: 11px 8px;
+                        border: 1px solid $border-input;
                         padding-inline-start: 20px;
 
                         &:active,
@@ -69,12 +69,13 @@
                         padding: 8px 14px;
                         border-radius: 100%;
                         position: absolute;
-                        top: 7px;
-                        left: 10px;
+                        top: 5px;
+                        left: 7px;
+                    
 
                         .icon-login {
                             color: $icon-color;
-                            font-size: 15px;
+                            font-size: 16px;
                         }
                     }
                 }
@@ -119,14 +120,14 @@
                     .forgot-password {
                         text-decoration: none;
                         color: $text-color;
-                        font-weight: 500;
+                        font-weight: 600;
                     }
                 }
 
                 .btns-login {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
 
                     .custom-btn {
                         margin-block-start: 20px;
@@ -147,7 +148,7 @@
                             margin-inline-end: 10px;
                             position: absolute;
                             left: 10px;
-                            top: 7px;
+                            top: 5px;
                         }
 
                         .text-butn {
@@ -176,6 +177,7 @@
 
                     .enter-btn {
                         width: 30% !important;
+                        margin-inline-start: 10px;
 
                         .arrow-icon {
                             font-size: 18px;
@@ -258,6 +260,7 @@
                         .activte-button,
                         .enter-btn {
                             width: 100% !important;
+                            margin-inline-start: 0px;
                         }
 
                         .custom-btn {
