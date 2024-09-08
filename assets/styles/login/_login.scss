@@ -1,3 +1,4 @@
+// Main Login Page Styles
 .login-page {
     height: 100vh;
     width: 100vw;
@@ -6,6 +7,7 @@
     position: relative;
     overflow: hidden;
 
+    // Login Form Container
     .login-form-container {
         height: 100vh;
         position: relative;
@@ -19,7 +21,6 @@
         &::before {
             background-color: white;
             position: absolute;
-            pointer-events: auto;
             content: "";
             width: 100%;
             height: 177%;
@@ -27,9 +28,9 @@
             top: -88px;
             border-radius: 134px;
             transform: rotate(332deg);
-
         }
 
+        // Main Part of the Login Form
         .login-main-part {
             position: relative;
             z-index: 1;
@@ -39,39 +40,41 @@
             text-align: center;
             flex-direction: column;
 
+            // Login Form Styles
             .login-form {
                 width: 70%;
 
                 .login-email {
-                    margin-block-end: 30px;
-
+                    margin-bottom: 30px;
                     text-align: start;
                 }
 
+                // Position Relative Wrapper
                 .position-relative {
                     position: relative;
 
+                    // Input Styles
                     .login-input {
-                        border-radius: 30px !important;
-                        padding: 11px 8px;
+                        border-radius: 30px;
+                        padding: 11px 20px;
                         border: 1px solid $border-input;
-                        padding-inline-start: 20px;
+                        box-shadow: $box-shadow-input;
+                        outline: none;
 
                         &:active,
                         &:focus {
-                            box-shadow: $box-shadow-input ;
-                            outline: none;
+                            box-shadow: $box-shadow-input;
                         }
                     }
 
+                    // Icon Background
                     .icon-background {
                         background-color: $icon-background;
                         padding: 8px 14px;
-                        border-radius: 100%;
+                        border-radius: 50%;
                         position: absolute;
                         top: 5px;
                         left: 7px;
-                    
 
                         .icon-login {
                             color: $icon-color;
@@ -80,9 +83,9 @@
                     }
                 }
 
+                // Remember Me Section
                 .login-remember {
-
-                    margin-block: 20px;
+                    margin: 20px 0;
 
                     .form-check-group {
                         .form-check-input-login {
@@ -90,31 +93,26 @@
                             height: 20px;
                             border-radius: 5px;
                             border: transparent;
-                            background-color: rgba(233,233,233,255);
+                            background-color: rgba(233, 233, 233, 1);
                             transition: all 0.3s ease;
 
                             &:checked {
                                 background-image: url('../images/check-icon.png');
-                                border: none;
                                 background-color: $icon-background;
                             }
 
-                            &:focus {
+                            &:focus,
+                            &:active {
                                 outline: none;
                                 box-shadow: none;
-                            }
-
-                            &:active {
-                                background-color: none;
                             }
                         }
 
                         .form-check-label {
                             color: #b4b4b4;
                             font-weight: 500;
-                            margin-inline-start: 10px;
+                            margin-left: 10px;
                         }
-
                     }
 
                     .forgot-password {
@@ -124,13 +122,15 @@
                     }
                 }
 
+                // Buttons Section
                 .btns-login {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    flex-wrap: wrap;
 
                     .custom-btn {
-                        margin-block-start: 20px;
+                        margin-top: 20px;
                         width: 80%;
                         background: linear-gradient(to right, #619d64, #22b7a7);
                         color: white;
@@ -145,7 +145,7 @@
                         .arrow-icon {
                             font-size: 30px;
                             color: #588463;
-                            margin-inline-end: 10px;
+                            margin-right: 10px;
                             position: absolute;
                             left: 10px;
                             top: 5px;
@@ -166,7 +166,7 @@
                     }
 
                     .activte-button {
-                        width: 65% !important;
+                        width: 65%;
 
                         .arrow-icon {
                             font-size: 20px;
@@ -176,8 +176,8 @@
                     }
 
                     .enter-btn {
-                        width: 30% !important;
-                        margin-inline-start: 10px;
+                        width: 30%;
+                        margin-left: 10px;
 
                         .arrow-icon {
                             font-size: 18px;
@@ -188,17 +188,16 @@
                 }
             }
 
+            // Logo Image
             .logo-img {
-                margin-block-end: 60px;
+                margin-bottom: 60px;
             }
         }
-
     }
-
 }
 
-
-.footer{
+// Footer Styles
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,7 +216,9 @@
         margin-inline: 10px;
     }
 }
-@media (max-width:1200px) {
+
+// Responsive Styles
+@media (max-width: 1200px) {
     .login-page {
         .login-form-container {
             &::before {
@@ -233,7 +234,7 @@
     }
 }
 
-@media (max-width:890px) {
+@media (max-width: 890px) {
     .login-page {
         display: flex;
         align-items: center;
@@ -246,10 +247,9 @@
             width: 90%;
         }
     }
-
 }
 
-@media (max-width:490px) {
+@media (max-width: 490px) {
     .login-page {
         .login-form-container {
             .login-main-part {
@@ -259,14 +259,14 @@
 
                         .activte-button,
                         .enter-btn {
-                            width: 100% !important;
-                            margin-inline-start: 0px;
+                            width: 100%;
+                            margin-left: 0;
                         }
 
                         .custom-btn {
                             .arrow-icon {
                                 font-size: 19px;
-                                left: 0px;
+                                left: 0;
                                 top: 14px;
                             }
                         }
