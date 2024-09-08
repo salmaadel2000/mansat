@@ -72,7 +72,7 @@
 .login-page .login-form-container .login-main-part .login-form .login-remember {
   margin-block: 20px;
 }
-.login-page .login-form-container .login-main-part .login-form .login-remember .form-check .form-check-input-login {
+.login-page .login-form-container .login-main-part .login-form .login-remember .form-check-group .form-check-input-login {
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -80,19 +80,19 @@
   background-color: rgb(233, 233, 233);
   transition: all 0.3s ease;
 }
-.login-page .login-form-container .login-main-part .login-form .login-remember .form-check .form-check-input-login:checked {
+.login-page .login-form-container .login-main-part .login-form .login-remember .form-check-group .form-check-input-login:checked {
   background-image: url("../images/check-icon.png");
   border: none;
   background-color: #f5f5f5;
 }
-.login-page .login-form-container .login-main-part .login-form .login-remember .form-check .form-check-input-login:focus {
+.login-page .login-form-container .login-main-part .login-form .login-remember .form-check-group .form-check-input-login:focus {
   outline: none;
   box-shadow: none;
 }
-.login-page .login-form-container .login-main-part .login-form .login-remember .form-check .form-check-input-login:active {
+.login-page .login-form-container .login-main-part .login-form .login-remember .form-check-group .form-check-input-login:active {
   background-color: none;
 }
-.login-page .login-form-container .login-main-part .login-form .login-remember .form-check .form-check-label {
+.login-page .login-form-container .login-main-part .login-form .login-remember .form-check-group .form-check-label {
   color: #b4b4b4;
   font-weight: 500;
   margin-inline-start: 10px;
