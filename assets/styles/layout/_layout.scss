@@ -373,8 +373,17 @@
         .layout-content {
             height: auto;
             .layout-spcial {
-                height: calc(100vh - 190px);
+                height: calc(100vh - 383px);
+                margin-block: 0px;
             }
+        }
+        .main-container{
+            justify-content: flex-end;
+            margin-block-start: 70px;
+            .navbar-toggler{
+                order: 2;
+            }
+        
         }
     }
     .footer{

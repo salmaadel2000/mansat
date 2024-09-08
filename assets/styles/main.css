@@ -519,7 +519,15 @@
     height: auto;
   }
   .layout-container .layout-content .layout-spcial {
-    height: calc(100vh - 190px);
+    height: calc(100vh - 383px);
+    margin-block: 0px;
+  }
+  .layout-container .main-container {
+    justify-content: flex-end;
+    margin-block-start: 70px;
+  }
+  .layout-container .main-container .navbar-toggler {
+    order: 2;
   }
   .footer {
     margin-block-start: 20px;
@@ -1327,6 +1335,15 @@
   #attachmentsContent .attachment-link-heading .attachment-heading {
     margin-inline: 0px;
     font-size: 14px;
+  }
+  .layout-btn {
+    padding: 6px 12px;
+  }
+  .layout-btn img {
+    margin: 0px !important;
+  }
+  .layout-btn .layout-btn-heading {
+    font-size: 14px !important;
   }
 }
 @media (max-width: 500px) {
