@@ -521,6 +521,9 @@
   .layout-container .layout-content .layout-spcial {
     height: calc(100vh - 190px);
   }
+  .footer {
+    margin-block-start: 20px;
+  }
 }
 .dashboard-container {
   padding: 20px;
@@ -990,6 +993,7 @@
 @media (max-width: 780px) {
   .dashboard-container-hidden-part .card-main .card-body-main .card-body-main-explaine {
     border: none;
+    padding: 0px;
   }
 }
 @media (max-width: 460px) {
