@@ -353,13 +353,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             &.active {
               color: $text-color;
-              font-weight: 700;
               border-bottom: 3px solid $text-color;
             }
-            .nav-link-main-span{
-              background-color:$border-input;
+
+            .nav-link-main-span {
+              background-color: $border-input;
               border-radius: 3px;
               padding: 0px 9px;
               margin-inline-start: 7px;
@@ -383,9 +384,7 @@
             font-weight: 800;
           }
 
-          .para {
-            font-weight: 500;
-          }
+      
         }
       }
 
@@ -599,6 +598,19 @@
     }
   }
 }
+@media (max-width: 780px) {
+  .dashboard-container-hidden-part {
+    .card-main {
+      .card-body-main {
+        .card-body-main-explaine {
+          border: none;  // Remove border on small screens
+        }
+      }
+    }
+  }
+}
+
+
 
 @media (max-width:460px) {
   .dashboard-container {

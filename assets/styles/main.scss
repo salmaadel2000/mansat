@@ -10,5 +10,5 @@ body {
     font-family: 'Tajawal', sans-serif;
     background-image: url('../images/bg.webp');
     background-position: center;
-    background-repeat: no-repeat;
+    height: calc(100vh - 190px) !important;
 }

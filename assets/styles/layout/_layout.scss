@@ -2,7 +2,7 @@
     padding: 0;
 
     .main-container {
-        margin-block-start: 50px;
+        margin-block-start: 40px;
     }
 
     .layout-header {
@@ -235,7 +235,7 @@
 
     .layout-content {
 
-        height: calc(100vh - 170px);
+        height: calc(100vh - 190px);
 
         .layout-spcial {
             display: flex;
@@ -307,6 +307,7 @@
 
 .footer {
     width: 100% !important;
+    margin-block-end: 20px;
 }
 
 
