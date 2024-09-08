@@ -67,111 +67,112 @@ document.addEventListener("DOMContentLoaded", function () {
         showTabContent(messageDataContent, messageDataTab, attachmentsContent, attachmentsTab);
     }
 
+    // Function to create link elements dynamically
+    function createLinkElement(linkValue, subjectValue) {
+        const linkContainer = document.createElement("div");
+        linkContainer.classList.add("link-container");
+
+        const titleParagraph = document.createElement("p");
+        titleParagraph.textContent = subjectValue; // Set subject value as the title
+
+        const newLink = document.createElement("a");
+        newLink.classList.add("new-link");
+        newLink.href = linkValue;
+        newLink.textContent = linkValue;
+
+        const iconDiv = document.createElement("div");
+        iconDiv.classList.add("icon-container");
+
+        const editIcon = document.createElement("i");
+        editIcon.classList.add("fa-solid", "fa-pen-to-square", "edit-icon");
+
+        const deleteIcon = document.createElement("i");
+        deleteIcon.classList.add("fa-solid", "fa-trash", "delete-icon");
+
+        iconDiv.appendChild(editIcon);
+        iconDiv.appendChild(deleteIcon);
+
+        const iconDivLink = document.createElement("div");
+        iconDivLink.classList.add("link-icon");
+        iconDivLink.appendChild(newLink);
+        iconDivLink.appendChild(iconDiv);
+
+        linkContainer.appendChild(titleParagraph); // Use the subject from the input
+        linkContainer.appendChild(iconDivLink);
+
+        return { linkContainer, newLink, editIcon, deleteIcon };
+    }
+
     // Function to attach event listeners for adding, editing, and deleting links
     function attachLinkManagementListeners() {
-        const plusIcon = document.getElementById('addlink');
-        const linkInput = document.getElementById("recipientNamelink");
         const linkList = document.getElementById("linkList");
 
-        if (!plusIcon || !linkInput || !linkList) {
-            console.error("One or more elements for link management not found. Please check the classes and IDs in your HTML.");
-            return;
-        }
+        // Event delegation for editing and deleting
+        linkList.addEventListener("click", function (event) {
+            const target = event.target;
 
-        plusIcon.addEventListener("click", function () {
-            const linkValue = linkInput.value.trim();
+            if (target.classList.contains("edit-icon")) {
+                handleEditLink(target);
+            } else if (target.classList.contains("delete-icon")) {
+                handleDeleteLink(target);
+            }
+        });
 
-            if (linkValue) {
-                const linkContainer = document.createElement("div");
-                linkContainer.classList.add("link-container");
-
-                const titleParagraph = document.createElement("p");
-                titleParagraph.textContent = "عنوان الرابط";
-
-                const newLink = document.createElement("a");
-                newLink.classList.add("new-link");
-                newLink.href = linkValue;
-                newLink.textContent = linkValue;
-
-                const iconDiv = document.createElement("div");
-                iconDiv.classList.add("icon-container");
-
-                const editIcon = document.createElement("i");
-                editIcon.classList.add("fa-solid", "fa-pen-to-square", "edit-icon");
-
-                const deleteIcon = document.createElement("i");
-                deleteIcon.classList.add("fa-solid", "fa-trash", "delete-icon");
-
-                iconDiv.appendChild(editIcon);
-                iconDiv.appendChild(deleteIcon);
-
-                const iconDivLink = document.createElement("div");
-                iconDivLink.classList.add("link-icon");
-                iconDivLink.appendChild(newLink);
-                iconDivLink.appendChild(iconDiv);
-
-                linkContainer.appendChild(titleParagraph);
-                linkContainer.appendChild(iconDivLink);
-
+        // Plus icon logic
+        document.getElementById("addlink").addEventListener("click", function () {
+            const linkValue = document.getElementById("recipientNamelink").value.trim();
+            const subjectValue = document.getElementById("subject-address").value.trim(); // Get the subject input value
+            if (linkValue && subjectValue) {
+                const { linkContainer, newLink } = createLinkElement(linkValue, subjectValue);
                 linkList.appendChild(linkContainer);
-
-                editIcon.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-
-                    const editModal = new bootstrap.Modal(document.getElementById('editModal'), {
-                        backdrop: 'static',
-                        keyboard: false
-                    });
-                    editModal.show();
-
-                    const editInput = document.getElementById('editLinkInput');
-                    editInput.value = linkValue;
-
-                    document.getElementById('saveEditButton').onclick = function () {
-                        const newLinkValue = editInput.value.trim();
-                        if (newLinkValue !== "") {
-                            newLink.textContent = newLinkValue;
-                            newLink.href = newLinkValue;
-
-                            linkContainer.appendChild(iconDivLink);
-                            editModal.hide();
-                        }
-                    };
-                });
-
-                deleteIcon.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-
-                    Swal.fire({
-                        title: 'هل أنت متأكد؟',
-                        text: "لن تتمكن من التراجع عن هذا!",
-                        icon: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085d6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'نعم، احذفه!',
-                        cancelButtonText: 'إلغاء'
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            linkContainer.remove();
-                            Swal.fire(
-                                'تم الحذف!',
-                                'تم حذف الرابط بنجاح.',
-                                'success'
-                            );
-                        }
-                    });
-                });
-
-                linkInput.value = "";
             } else {
-                console.log("No link found");
+                console.log("No link or subject found");
             }
         });
     }
 
+    // Function to handle editing a link
+    function handleEditLink(editIcon) {
+        const linkContainer = editIcon.closest(".link-container");
+        const link = linkContainer.querySelector(".new-link");
 
+        const editModal = new bootstrap.Modal(document.getElementById('editModal'), {
+            backdrop: 'static',
+            keyboard: false
+        });
+        editModal.show();
 
+        const editInput = document.getElementById('editLinkInput');
+        editInput.value = link.href;
+
+        document.getElementById('saveEditButton').onclick = function () {
+            const newLinkValue = editInput.value.trim();
+            if (newLinkValue !== "") {
+                link.textContent = newLinkValue;
+                link.href = newLinkValue;
+                editModal.hide();
+            }
+        };
+    }
+
+    // Function to handle deleting a link
+    function handleDeleteLink(deleteIcon) {
+        const linkContainer = deleteIcon.closest(".link-container");
+
+        Swal.fire({
+            title: 'هل أنت متأكد؟',
+            text: "لن تتمكن من التراجع عن هذا!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'نعم، احذفه!',
+            cancelButtonText: 'إلغاء'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                linkContainer.remove();
+                Swal.fire('تم الحذف!', 'تم حذف الرابط بنجاح.', 'success');
+            }
+        });
+    }
 });

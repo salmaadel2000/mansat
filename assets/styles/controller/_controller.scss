@@ -356,9 +356,12 @@
     .form-check {
         width: 49.333333%;
     }
+    .modal-content{
+        --bs-modal-width: 700px;
+    }
 }
 
-@media (max-width:700px) {
+@media (max-width:990px) {
     #attachmentsContent {
         .text-end {
             .custom-btn {
@@ -366,9 +369,6 @@
             }
         }
     }
-}
-
-@media (max-width:500px) {
     #attachmentsContent {
 
         .attachmentsContent-main {
@@ -383,8 +383,15 @@
                 border: none;
             }
         }
+        .attachment-link-heading{ .attachment-heading{
+            margin-inline:0px ;
+            font-size: 14px;
+        } }
     }
 
+}
+
+@media (max-width:500px) {
     .form-check {
         width: 100%;
     }

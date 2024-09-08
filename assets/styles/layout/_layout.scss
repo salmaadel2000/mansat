@@ -332,6 +332,8 @@
 
 @media (max-width:990px) {
     .layout-container {
+
+
         .layout-header {
             .layout-nav-profile {
                 margin: 0px;
@@ -370,7 +372,9 @@
 
         .layout-content {
             height: auto;
-            padding: 20px 0px;
+            .layout-spcial {
+                height: calc(100vh - 190px);
+            }
         }
     }
 }
