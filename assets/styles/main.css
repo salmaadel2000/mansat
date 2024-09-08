@@ -217,7 +217,7 @@
   padding: 0;
 }
 .layout-container .main-container {
-  margin-block-start: 40px;
+  margin-block-start: 43px;
 }
 .layout-container .layout-header {
   background-image: url("../images/bg.webp"), linear-gradient(45deg, rgb(47, 69, 51) 0%, rgb(47, 69, 51) 55%, rgb(15, 80, 85) 100%);
