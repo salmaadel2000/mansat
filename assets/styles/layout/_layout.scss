@@ -372,21 +372,38 @@
 
         .layout-content {
             height: auto;
+
             .layout-spcial {
                 height: calc(100vh - 383px);
                 margin-block: 0px;
             }
         }
-        .main-container{
+
+        .main-container {
             justify-content: flex-end;
             margin-block-start: 70px;
-            .navbar-toggler{
+
+            .navbar-toggler {
                 order: 2;
             }
-        
+
         }
     }
-    .footer{
+
+    .footer {
         margin-block-start: 20px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .layout-container .layout-header .layout-nav-profile .notification .notification-dropdown {
+        top: 159%;
+        left: -147%;
+        &::before{
+            top: -25px;
+            left: 37px;
+            border-width: 0 25px 25px 25px;
+        }
     }
 }

@@ -533,6 +533,17 @@
     margin-block-start: 20px;
   }
 }
+@media (max-width: 400px) {
+  .layout-container .layout-header .layout-nav-profile .notification .notification-dropdown {
+    top: 159%;
+    left: -147%;
+  }
+  .layout-container .layout-header .layout-nav-profile .notification .notification-dropdown::before {
+    top: -25px;
+    left: 37px;
+    border-width: 0 25px 25px 25px;
+  }
+}
 .dashboard-container {
   padding: 20px;
 }
