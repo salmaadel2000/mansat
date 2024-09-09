@@ -549,9 +549,10 @@
   .dashboard-container {
     .cards-section {
       .cards-section-row {
+        margin-block-end: 0px;
         .card-item {
           width: 100%;
-
+          margin-block-end: 10px;
           .card-body {
             .card-actions {
               .card-icon {
@@ -572,7 +573,7 @@
 
     .filter-section {
       flex-direction: column;
-
+         margin-block-start: 0px;
       .custom-login-button {
         margin-right: 0px;
         margin-block-start: 20px;

@@ -989,8 +989,12 @@
 }
 
 @media (max-width: 900px) {
+  .dashboard-container .cards-section .cards-section-row {
+    margin-block-end: 0px;
+  }
   .dashboard-container .cards-section .cards-section-row .card-item {
     width: 100%;
+    margin-block-end: 10px;
   }
   .dashboard-container .cards-section .cards-section-row .card-item .card-body .card-actions .card-icon .span-hover {
     z-index: 3;
@@ -1001,6 +1005,7 @@
   }
   .dashboard-container .filter-section {
     flex-direction: column;
+    margin-block-start: 0px;
   }
   .dashboard-container .filter-section .custom-login-button {
     margin-right: 0px;
