@@ -74,7 +74,7 @@
                         margin: 0;
 
                         li {
-                            padding: 10px;
+                            padding: 6px;
                             border-bottom: 1px solid #f0f0f0;
                             white-space: nowrap;
                             overflow: hidden;
@@ -221,10 +221,6 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-
-            img {
-                margin-right: 10px;
-            }
 
             .layout-btn-heading {
                 font-weight: bold;
@@ -376,7 +372,7 @@
             height: auto;
 
             .layout-spcial {
-                height: calc(100vh - 383px);
+                height: calc(100vh - 187px);
                 margin-block: 0px;
             }
         }

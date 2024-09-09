@@ -40,17 +40,17 @@
             flex-direction: column;
 
             .login-form {
-                width: 70%;
+                width: 65%;
 
                 .login-email {
                     margin-block-end: 30px;
 
-                    text-align: start;
+                    text-align: center;
                 }
 
                 .position-relative {
                     position: relative;
-
+                     width: 95%;
                     .login-input {
                         border-radius: 30px !important;
                         padding: 11px 8px;
@@ -152,7 +152,7 @@
                         }
 
                         .text-butn {
-                            font-size: 20px;
+                            font-size: 18px;
 
                             a {
                                 text-decoration: none;

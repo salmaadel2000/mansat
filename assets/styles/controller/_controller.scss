@@ -243,6 +243,7 @@
     &:focus {
         box-shadow: none;
         border-color: #b4cfb4;
+        background-color: transparent;
     }
 }
 
@@ -339,6 +340,7 @@
             outline: none;
             box-shadow: none;
             border-color: #b4cfb4;
+     
         }
 
         &:active {
