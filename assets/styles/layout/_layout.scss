@@ -330,9 +330,8 @@
     }
 }
 
-@media (max-width:990px) {
+@media (max-width: 990px) {
     .layout-container {
-
 
         .layout-header {
             .layout-nav-profile {
@@ -342,7 +341,6 @@
                     font-size: 12px;
                 }
             }
-
         }
 
         .layout-navbar {
@@ -368,6 +366,10 @@
                 justify-content: center;
                 width: 100%;
             }
+
+            .layout-nav-items {
+                margin-block-start: 24px;
+            }
         }
 
         .layout-content {
@@ -381,7 +383,7 @@
 
         .main-container {
             justify-content: flex-end;
-            margin-block-start: 70px;
+            margin-block-start: 50px;
 
             .navbar-toggler {
                 order: 2;
@@ -400,7 +402,8 @@
     .layout-container .layout-header .layout-nav-profile .notification .notification-dropdown {
         top: 159%;
         left: -147%;
-        &::before{
+
+        &::before {
             top: -25px;
             left: 37px;
             border-width: 0 25px 25px 25px;

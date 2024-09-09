@@ -515,6 +515,9 @@
     justify-content: center;
     width: 100%;
   }
+  .layout-container .layout-navbar .layout-nav-items {
+    margin-block-start: 24px;
+  }
   .layout-container .layout-content {
     height: auto;
   }
@@ -524,7 +527,7 @@
   }
   .layout-container .main-container {
     justify-content: flex-end;
-    margin-block-start: 70px;
+    margin-block-start: 50px;
   }
   .layout-container .main-container .navbar-toggler {
     order: 2;
