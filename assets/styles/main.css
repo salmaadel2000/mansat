@@ -122,12 +122,12 @@
   position: relative;
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login .custom-btn .arrow-icon {
-  font-size: 30px;
+  font-size: 25px;
   color: #588463;
   margin-inline-end: 10px;
   position: absolute;
   left: 10px;
-  top: 5px;
+  top: 8px;
 }
 .login-page .login-form-container .login-main-part .login-form .btns-login .custom-btn .text-butn {
   font-size: 18px;
