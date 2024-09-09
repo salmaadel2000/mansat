@@ -59,7 +59,7 @@
 
                         &:active,
                         &:focus {
-                            box-shadow: $box-shadow-input ;
+                            border-color: #b4cfb4;
                             outline: none;
                         }
                     }

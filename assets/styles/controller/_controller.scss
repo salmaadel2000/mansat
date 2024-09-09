@@ -187,6 +187,7 @@
         &:active,
         &:focus {
             box-shadow: none;
+        
         }
 
         background-image: none;
@@ -241,7 +242,7 @@
     &:active,
     &:focus {
         box-shadow: none;
-        border-color: none !important;
+        border-color: #b4cfb4;
     }
 }
 
@@ -337,6 +338,7 @@
         &:focus {
             outline: none;
             box-shadow: none;
+            border-color: #b4cfb4;
         }
 
         &:active {

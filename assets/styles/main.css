@@ -54,7 +54,7 @@
   padding-inline-start: 20px;
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .login-input:active, .login-page .login-form-container .login-main-part .login-form .position-relative .login-input:focus {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: #b4cfb4;
   outline: none;
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .icon-background {
@@ -1231,7 +1231,7 @@
 }
 .form-control:active, .form-control:focus {
   box-shadow: none;
-  border-color: none !important;
+  border-color: #b4cfb4;
 }
 
 .input-layout-nameclient {
@@ -1317,6 +1317,7 @@
 .form-check .form-check-input-login:focus {
   outline: none;
   box-shadow: none;
+  border-color: #b4cfb4;
 }
 .form-check .form-check-input-login:active {
   background-color: none;
