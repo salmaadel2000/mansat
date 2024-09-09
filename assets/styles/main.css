@@ -519,10 +519,6 @@
   .layout-container .layout-content {
     height: auto;
   }
-  .layout-container .layout-content .layout-spcial {
-    height: calc(100vh - 187px);
-    margin-block: 0px;
-  }
   .layout-container .main-container {
     justify-content: flex-end;
   }
