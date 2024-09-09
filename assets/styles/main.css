@@ -527,7 +527,6 @@
   }
   .layout-container .main-container {
     justify-content: flex-end;
-    margin-block-start: 50px;
   }
   .layout-container .main-container .navbar-toggler {
     order: 2;
