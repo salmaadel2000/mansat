@@ -60,10 +60,10 @@
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .icon-background {
   background-color: #f5f5f5;
-  padding: 8px 14px;
+  padding: 7px 13px;
   border-radius: 100%;
   position: absolute;
-  top: 5px;
+  top: 4.7px;
   left: 7px;
 }
 .login-page .login-form-container .login-main-part .login-form .position-relative .icon-background .icon-login {
